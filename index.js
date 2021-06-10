@@ -1,17 +1,19 @@
 //Saturday Fun
-const saturdayFun = function (activity="roller-skate"){
-    return console.log(`This Saturday, I want to ${activity}!`);
+const saturdayFun = function(weekendFun="roller-skate"){
+    return `This Saturday, I want to ${weekendFun}!`
 }
-saturdayFun();
+saturdayFun(weekendFun ="bathe my dog");
 
 //Monday Work 
-const mondayWork = function (grindStone = "go to the office"){
-    return console.log(`This Monday, I will ${grindStone}.`);
-}
-mondayWork();
+ function mondayWork (grindStone = "go to the office"){
+    return `This Monday, I will ${grindStone}.`
+};
+
 
 //Wrap Adjective 
-const wrapAdjective = function (cheer){
-    return console.log(`You are ${cheer}!!`);
-}
-wrapAdjective("special");
+function wrapAdjective (punctuation="*"){
+    const innerfunction = function(job="special"){
+        return `You are ${punctuation}${job}${punctuation}!`
+    }
+   return innerfunction 
+};
